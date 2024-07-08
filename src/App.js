@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// news app API: Your API key is: e5dda8be0d3443e9ad8f940eda102843
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+import React, { Component } from "react";
+import Navbar from "./components/Navbar";
+import News from "./components/News";
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <News />
+      </div>
+    );
+  }
 }
-
-export default App;
